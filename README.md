@@ -1,4 +1,4 @@
-Blog Application
+# Blog Application
 This project is a full-stack blog application built with a React frontend and a Node.js/Express backend. It allows users to read, create, edit, and delete blog posts, featuring user authentication, dynamic navigation, and a responsive design.
 
 Features
