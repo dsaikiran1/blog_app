@@ -22,12 +22,8 @@ Install Dependencies:
 bash
 Copy
 Edit
-# For the backend
-npm install
-
-# For the frontend
-cd client
-npm install
+# For the backend & frontend
+npm run start
 Set Up Environment Variables:
 
 Backend: Create a .env file in the root directory with the following variables:
