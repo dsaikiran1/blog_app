@@ -43,12 +43,7 @@ export default function Navbar({ isLoggedIn, setIsLoggedIn, user }) {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/blogs">
-                Blogs
-              </Link>
-            </li>
-
+           
             {isLoggedIn ? (
               <li className="nav-item dropdown">
                 <a
