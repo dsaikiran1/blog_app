@@ -38,7 +38,9 @@ const connectDB = async () => {
       process.exit(1);
   }
 };
-connectDB();
 
-app.listen(PORT, () => 
-    console.log("Server running on port on: http://localhost:"+PORT));
+app.listen(PORT, () => {
+    connectDB();
+
+    console.log("Server running on port on: http://localhost:"+PORT)
+});
