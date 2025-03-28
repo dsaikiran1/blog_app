@@ -27,7 +27,7 @@ export default function UserPage() {
   }, [navigate]);
 
   const fetchUserBlogs = (token) => {
-    fetch("http://localhost:5000/api/blogs/user/blogs", {
+    fetch("/api/blogs/user/blogs", {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     })
@@ -43,9 +43,9 @@ export default function UserPage() {
     if (!newBlogTitle || !newBlogContent) {
       setError("Both title and content are required.");
       return;
-    }
+    } 
 
-    fetch("http://localhost:5000/api/blogs/create", {
+    fetch("/api/blogs/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

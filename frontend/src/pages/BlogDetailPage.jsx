@@ -12,7 +12,7 @@ export default function BlogDetailPage() {
     // Fetch the blog details from your API based on the blog ID
     const fetchBlogDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/blogs/${id}`);
+        const response = await fetch(`/api/blogs/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch blog details');
         }
